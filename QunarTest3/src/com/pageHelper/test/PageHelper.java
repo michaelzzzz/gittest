@@ -35,5 +35,4 @@ public  PageUpdate getPageUpdate(){
 	pageupdate.initViews();
 	return pageupdate;
 }
-
 }

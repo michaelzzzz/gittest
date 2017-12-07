@@ -1,5 +1,6 @@
 package com.pages.test;
 
+import android.app.Activity;
 import android.widget.TextView;
 
 import com.robotium.solo.Solo;
@@ -16,8 +17,10 @@ public PageUpdate(Solo solo){
  */
 
 public void initViews(){
-	cancel = (TextView)solo.getView("com.mqunar.atom.attemper:id/atom_atte_iv_close");
-	
+//	cancel = (TextView)solo.getView("com.mqunar.atom.attemper:id/atom_atte_iv_close");
+	Activity act =solo.getCurrentActivity();//获取当前的activity
+    int id1 =act.getResources().getIdentifier("atom_atte_iv_close" ,"id",act.getPackageName());//获取id
+    cancel = (TextView)solo.getView(id1);
 }
 public void clickOncancel(){
 	solo.clickOnView(cancel);

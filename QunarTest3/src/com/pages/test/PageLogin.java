@@ -1,6 +1,8 @@
 package com.pages.test;
 
+import android.app.Activity;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.robotium.solo.Solo;
 
@@ -14,27 +16,30 @@ public PageLogin(Solo solo){
  * 用来加载出这个页面的控件
  */
 public void initViews(){
-	homepage = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_home_default");
-	order = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_order_default");
-	find = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_finding_default");
-	service = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_service_default");
-	my = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_uc_default");
-}
-public void clickOnHomePage(){
-	solo.clickOnView(homepage);
-}
-public void clickOnOrder(){
-	solo.clickOnView(order);
-}
-public void clickOnFind(){
-	solo.clickOnView(find);
-}
-public void clickOnService(){
-	solo.clickOnView(service);
-}
+//	homepage = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_home_default");
+//	order = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_order_default");
+//	find = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_finding_default");
+//	service = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_service_default");
+//	my = (LinearLayout)solo.getView("com.mqunar.atom.alexhome:id/atom_alexhome_uc_default");
+	
+	Activity act =solo.getCurrentActivity();//获取当前的activity
+    int id1 =act.getResources().getIdentifier("atom_alexhome_uc_default" ,"id",act.getPackageName());//获取id
+    my = (LinearLayout)solo.getView(id1);
+ }
+//public void clickOnHomePage(){
+//	solo.clickOnView(homepage);
+//}
+//public void clickOnOrder(){
+//	solo.clickOnView(order);
+//}
+//public void clickOnFind(){
+//	solo.clickOnView(find);
+//}
+//public void clickOnService(){
+//	solo.clickOnView(service);
+//}
 public void clickOnMy(){
 	solo.clickOnView(my);
 }
-
 
 }

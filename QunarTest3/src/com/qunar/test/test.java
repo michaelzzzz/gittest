@@ -9,7 +9,9 @@ public  test(){
 }
 
 public void testQunar(){
+	assertTrue("PUpgradeActivity is not found!", solo.waitForActivity("PUpgradeActivity"));
 	pageHelper.getPageUpdate().clickOncancel();
+	assertTrue("MainActivity is not found!", solo.waitForActivity("MainActivity"));
 	pageHelper.getPageLogin().clickOnMy();
 }
 }
