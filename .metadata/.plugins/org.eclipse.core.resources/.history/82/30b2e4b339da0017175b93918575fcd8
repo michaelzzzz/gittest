@@ -1,0 +1,19 @@
+package com.basic.test;
+
+public class Snippet {
+	
+	public boolean clickByID(String id) {
+		View view;
+		if (id == "") {
+	
+			return false;
+		}
+		Activity act = solo.getCurrentActivity();// 获取当前的activity
+		int id1 = act.getResources().getIdentifier(id, "id",
+				act.getPackageName());// 获取id
+		view = solo.getView(id1);// 得到view
+		solo.clickOnView(view);// 点击View
+		return true;
+	}
+}
+

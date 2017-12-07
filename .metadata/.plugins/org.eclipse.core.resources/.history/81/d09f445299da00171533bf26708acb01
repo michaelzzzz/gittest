@@ -1,0 +1,17 @@
+package com.qunar.test;
+
+import com.basic.test.BasicTest;
+
+public class test extends BasicTest {
+
+public  test(){
+	super();
+}
+
+public void testQunar(){
+//	solo.sleep(10000);
+	assertTrue("PUpgradeActivity is not found!", solo.waitForActivity("PUpgradeActivity"));
+	pageHelper.getPageUpdate().clickOncancel();
+	pageHelper.getPageLogin().clickOnMy();
+}
+}

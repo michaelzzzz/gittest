@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.Qunar.test&apos; to &apos;Qunar/gen/com.weChat.test&apos;&#x0D;&#x0A;- Original project: &apos;QunarAppTest&apos;&#x0D;&#x0A;- Destination element: &apos;Qunar/gen/com.weChat.test&apos;&#x0D;&#x0A;- Original element: &apos;QunarAppTest/gen/com.Qunar.test&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Qunar/gen&lt;com.weChat.test" element1="/gen&lt;com.Qunar.test" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1512483507865" version="1.0"/>
+</session>

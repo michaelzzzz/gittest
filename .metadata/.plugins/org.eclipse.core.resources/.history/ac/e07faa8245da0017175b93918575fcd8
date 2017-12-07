@@ -1,0 +1,24 @@
+package com.pages.test;
+
+import android.R;
+import android.widget.TextView;
+
+import com.solowrap.test.SoloWrap;
+
+public class PageUpdate {
+private SoloWrap solo;
+private TextView cancel;
+public PageUpdate(SoloWrap solo){
+	this.solo= solo;
+}
+/**
+ * 用来加载出更新页面
+ */
+public void initViews(){
+	cancel = (TextView)solo.getView("com.mqunar.atom.attemper:id/atom_atte_iv_close");
+	
+}
+public void clickOncancel(){
+	solo.clickOnView(cancel);
+}
+}

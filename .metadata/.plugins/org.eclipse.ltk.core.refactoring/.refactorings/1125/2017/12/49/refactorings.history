@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Cooooo.java&apos; to &apos;QunarTest3/src/com.basic.test&apos;&#x0D;&#x0A;- Original project: &apos;1125&apos;&#x0D;&#x0A;- Destination element: &apos;QunarTest3/src/com.basic.test&apos;&#x0D;&#x0A;- Original element: &apos;com.Qunar.test.Cooooo.java&apos;" description="Copy compilation unit" destination="=QunarTest3/src&lt;com.basic.test" element1="/src&lt;com.Qunar.test{Cooooo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1512532698850" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,19 @@
+package com.qunar.test;
+
+import com.basic.test.BasicTest;
+
+public class test extends BasicTest {
+
+public  test(){
+	super();
+}
+
+public void testQunar(){
+	solo.sleep(10000);
+	solo.clickOnView(1);
+	//pageHelper.getPageUpdate().clickOncancel();
+	pageHelper.getPageLogin().clickOnMy();
+}
+
+
+}

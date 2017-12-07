@@ -1,0 +1,39 @@
+package com.pageHelper.test;
+
+import com.pages.test.PageLogin;
+import com.pages.test.PageUpdate;
+import com.solowrap.test.SoloWrap;
+
+public class PageHelper {
+private SoloWrap solo;
+private  PageLogin pageLogin;
+private  PageUpdate pageupdate;
+
+
+public PageHelper(SoloWrap solo){
+	this.solo = solo;
+}
+/**
+ * 首页类
+ * @return
+ */
+public  PageLogin getPageLogin(){
+	if(pageLogin==null){
+		pageLogin = new PageLogin(solo);
+	}
+	pageLogin.initViews();
+	return pageLogin;
+}
+/**
+ * 更新框
+ * @return
+ */
+public  PageUpdate getPageUpdate(){
+	if(pageupdate==null){
+		pageupdate = new PageUpdate(solo);
+	}
+	pageupdate.initViews();
+	return pageupdate;
+}
+
+}

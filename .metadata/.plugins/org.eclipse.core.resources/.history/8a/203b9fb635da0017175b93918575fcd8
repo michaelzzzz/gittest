@@ -1,0 +1,15 @@
+package com.qunar.test;
+
+import com.basic.test.BasicTest;
+import com.pageHelper.test.PageHelper;
+
+public class test extends BasicTest {
+
+public  test(){
+	super();
+}
+
+public void testQunar(){
+   pageHelper.getPageLogin().clickOnMy();
+}
+}
