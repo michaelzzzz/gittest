@@ -1,7 +1,6 @@
 package com.basic.test;
 
 import android.test.ActivityInstrumentationTestCase2;
-
 import com.pageHelper.test.PageHelper;
 import com.robotium.solo.Solo;
 public class BasicTest extends ActivityInstrumentationTestCase2 {
